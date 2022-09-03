@@ -18,6 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  MAVEN_CLI_OPTS: --no-transfer-progress
   PACT_BROKER_BASE_URL: https://drakulavich.pactflow.io
   PACT_BROKER_TOKEN: ${{ secrets.PACT_BROKER_TOKEN }}
   GIT_COMMIT: ${{ github.sha }}
