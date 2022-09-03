@@ -35,11 +35,11 @@ fake_ci:
 ## =====================
 
 ci-test:
-	./mvnw verify
-	./mvnw surefire-report:report-only
+	./mvnw ${MAVEN_CLI_OPTS} verify
+	./mvnw ${MAVEN_CLI_OPTS} surefire-report:report-only
 
 test:
-	./mvnw test
+	./mvnw ${MAVEN_CLI_OPTS} test
 
 ## =====================
 ## Pact tasks
@@ -80,4 +80,4 @@ record_deployment:
 	cp -n .env.example .env || true
 
 clean:
-	./mvnw clean
+	./mvnw ${MAVEN_CLI_OPTS} clean
