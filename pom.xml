@@ -25,9 +25,9 @@
 		<java.version>11</java.version>
 		<kotlin.version>1.6.21</kotlin.version>
 		<feign.version>8.18.0</feign.version>
-		<jackson-module-kotlin.version>2.13.3</jackson-module-kotlin.version>
-
 		<springdoc-openapi.version>1.6.11</springdoc-openapi.version>
+		<jackson-module-kotlin.version>2.13.3</jackson-module-kotlin.version>
+		<maven-surefire-report-plugin.version>3.0.0-M7</maven-surefire-report-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -226,7 +226,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>3.0.0-M7</version>
+				<version>${maven-surefire-report-plugin.version}</version>
 			</plugin>
 		</plugins>
 	</reporting>
